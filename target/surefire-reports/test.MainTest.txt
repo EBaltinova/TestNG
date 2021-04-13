@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: test.MainTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.981 sec <<< FAILURE!
+createFileTest(test.MainTest)  Time elapsed: 0.03 sec  <<< FAILURE!
+java.io.IOException: Системе не удается найти указанный путь
+	at java.io.WinNTFileSystem.createFileExclusively(Native Method)
+	at java.io.File.createNewFile(File.java:1012)
+	at test.MainTest.createFileTest(MainTest.java:30)
+

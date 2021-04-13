@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="test">
+    <parameter name="filename" value="fileNameParameter"/>
+    <test verbose="2" preserve-order="true" name="C:/Users/balti/test1">
+        <groups>
+            <run>
+                <include name="negative"/>
+                <exclude name="positive"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.MainTest">
+                <methods>
+                    <include name="setUp"/>
+                    <include name="createFileTest"/>
+                    <include name="fileNotExistsTest"/>
+                    <include name="tearDown"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
